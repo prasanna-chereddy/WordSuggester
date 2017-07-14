@@ -18,7 +18,7 @@ public class SuggestionDataManager implements ISuggestionDataManager {
         root = new Node();
 
         try {
-            BufferedReader b = new BufferedReader(new FileReader("C:\\Users\\GEETHA\\Desktop\\dictionary.txt"));
+            BufferedReader b = new BufferedReader(new FileReader("C:\\Users\\prasanna\\Desktop\\dictionary.txt"));
             while (true) {
                 String line = b.readLine();
                 if (line == null) {
