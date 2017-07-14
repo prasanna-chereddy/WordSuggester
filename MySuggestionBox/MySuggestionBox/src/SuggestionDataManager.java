@@ -7,23 +7,13 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author GEETHA
- */
+
 public class SuggestionDataManager implements ISuggestionDataManager {
-//ArrayList<String> a;
 
     Trie t;
     Node root;
 
     public SuggestionDataManager() {
-        // a=new ArrayList<>();
         t = new Trie();
         root = new Node();
 
@@ -47,7 +37,6 @@ public class SuggestionDataManager implements ISuggestionDataManager {
 
     @Override
     public ArrayList<String> getSuggestions(String prefix) {
-        // ArrayList<String> words=new ArrayList<>();
         ArrayList<String> w = t.autoSuggest(root, prefix);
 
         if (w==null) {
