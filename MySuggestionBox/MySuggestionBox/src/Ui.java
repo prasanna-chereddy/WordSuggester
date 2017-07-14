@@ -9,15 +9,6 @@ import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author GEETHA
- */
 public class Ui extends javax.swing.JFrame {
 
     ISuggestionDataManager i = new SuggestionDataManager();
@@ -27,7 +18,6 @@ public class Ui extends javax.swing.JFrame {
         initComponents();
         jList1.setModel(model);
        jList1.setVisible(false);
-       // jScrollPane1.setVisible(false);
 
     }
 
@@ -118,31 +108,6 @@ public class Ui extends javax.swing.JFrame {
 
     private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
 
-        /*  String q=new String();
-         
-         if(evt.getKeyChar()=='\b')
-         q=jTextField1.getText();
-         else
-         q=jTextField1.getText()+evt.getKeyChar();
-        
-         ArrayList<String> rs=i.getSuggestions(q);
-    
-         DefaultListModel model=new DefaultListModel();
-         for(String x:rs)
-         {
-           
-         model.addElement(x);
-         }
-       
-         jList1.setModel(model);
-         if(q.equals(""))
-         jList1.setVisible(false);
-         else
-         jList1.setVisible(true);
-         if(rs.isEmpty())
-         jList1.setVisible(false);
-        
-         */
     }//GEN-LAST:event_jTextField1KeyTyped
 
     private void none(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_none
@@ -167,7 +132,6 @@ public class Ui extends javax.swing.JFrame {
             for (String wo : a) {
 
                 model.addElement(wo);
-                //System.out.println(x);
             }
 
             
@@ -175,9 +139,7 @@ public class Ui extends javax.swing.JFrame {
         }
  
         
-        
-     // jScrollPane1.setVisible(true);
-    }//GEN-LAST:event_jTextField1KeyReleased
+           }//GEN-LAST:event_jTextField1KeyReleased
 
     private void SearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchActionPerformed
         try {
